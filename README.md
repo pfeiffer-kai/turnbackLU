@@ -31,9 +31,9 @@ export OMP_NUM_THREADS=2
 
 <a id="1">[1]</a> https://web.stanford.edu/group/SOL/software/lusol/
 
-<a id="1">[2]</a> Kai Pfeiffer, Abderrahmane Kheddar, "Efficient Lexicographic Optimization for Prioritized Robot Control and Planning", 2024, https://arxiv.org/abs/2403.09160
+<a id="1">[2]</a> Kai Pfeiffer, Abderrahmane Kheddar, "Sequential hierarchical least-squares programming for prioritized non-linear optimal control", 2024, https://www.tandfonline.com/doi/abs/10.1080/10556788.2024.2307467
 
-<a id="1">[3]</a> Kai Pfeiffer, Abderrahmane Kheddar, "Sequential hierarchical least-squares programming for prioritized non-linear optimal control", 2024, https://www.tandfonline.com/doi/abs/10.1080/10556788.2024.2307467
+<a id="1">[3]</a> Kai Pfeiffer, Abderrahmane Kheddar, "Efficient Lexicographic Optimization for Prioritized Robot Control and Planning", 2024, https://arxiv.org/abs/2403.09160
 
 ## Authors
 
