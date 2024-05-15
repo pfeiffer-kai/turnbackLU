@@ -1,0 +1,16 @@
+build/
+*.swp
+*.swo
+*.o
+*.so
+test/*.txt
+src/CMakeFiles
+tests/CMakeFiles
+CMakeFiles/
+CMakeCache.txt
+CTestTestfile.cmake
+Makefile
+cmake_install.cmake
+config.h
+config.log
+
