@@ -1,8 +1,11 @@
 ## C++ implementation of turnback algorithm
 
 This is a C++ implementation of the turnback algorithm based on the updateable LU factorization package LUSOL [1].
+
 It efficiently reuses matrix subsets [2].
+
 If the matrix represents dynamics integrated by the explicit Euler method (XEID), further simplifications are made [3].
+
 The algorithm is parallelized using OpenMP.
 
 ## Install 
