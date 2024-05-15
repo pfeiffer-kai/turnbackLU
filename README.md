@@ -12,7 +12,7 @@ The algorithm is parallelized using OpenMP.
    * [Eigen](http://eigen.tuxfamily.org/index.php?title=Main_Page)
    * [eigen_clusol](https://github.com/pfeiffer-kai/eigen_clusol)
    * [clusol: modified version of lusol (https://github.com/nwh/lusol)](https://github.com/pfeiffer-kai/clusol)
-   * [OpenMP](https://www.openmp.org/)
+   * [OpenMP (optional)](https://www.openmp.org/)
    
 ## Usage
 
