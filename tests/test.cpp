@@ -52,7 +52,6 @@ int main()
             int nt = nv-FFoffset;
             int nf = 4*6;
             int nu = nt+nf;
-            int nuv = nx - nu;
             int nxu = nx + nu;
             int n = T * (nx + nu);
             int me = T * nx;
@@ -63,7 +62,6 @@ int main()
 
             vec x = vec::Ones(nx);
             vec u = vec::Zero(nu);
-            vec uv = vec::Zero(nuv);
 
             mat ZTZ;
             mat Q = mat(nx, nx); Q.setIdentity();
