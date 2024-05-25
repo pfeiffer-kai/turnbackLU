@@ -15,4 +15,5 @@ macro(addUnitTest name)
   # Adding a project configuration file (for MSVC only)
 endmacro(addUnitTest)
 
-addUnitTest(test ${OBJS})
+addUnitTest(test_xeid ${OBJS})
+addUnitTest(test_sparse ${OBJS})

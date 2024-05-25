@@ -14,7 +14,7 @@ set(CMAKE_CXX_STANDARD 14 CACHE STRING "C++ version selection")
 
 option(SAFEGUARD "Enable safeguarding functions" OFF)
 option(COMPILE_TESTS "compile the tests" OFF)
-option(TIMEMEASUREMENTS "compile the tests" OFF)
+option(TIMEMEASUREMENTS "make time measurements" OFF)
 option(MULTITHREADING "Enable multithreading via OPENMP" OFF)
 
 add_compile_options(

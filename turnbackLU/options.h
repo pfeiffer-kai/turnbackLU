@@ -48,7 +48,7 @@ namespace turnback
         // 4: the pivot is picked by LUSOL, by having no pivot requirements, z's are computed one by one and accepted if error below threshold (higher accuracy with higher computational effort; this basis does not necessarily have full rank)
         int pivotM = 0;
 
-        int verbose = NONE; // NONE, BASIC, CONV, VAR, MAT
+        int verbose = BASIC; // NONE, BASIC, CONV, VAR, MAT
         int verboseTime = NONE;
         int tid = 0;
 

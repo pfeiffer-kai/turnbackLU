@@ -883,23 +883,26 @@ namespace turnback
         }
         if (opt.verbose >= CONV) cout << "turnbackLU::fixb: the gap is " << gap << endl;
 
-        while (i < rankZ-1)
+        while (i < rankZ)
         {
             ws->subsetNr[ws->pivotCols[ws->pivotcolssort[i]]] = nrSubsets;
             ws->subsetCard[nrSubsets]++;
             ws->jsPerSubset[nrSubsets].push_back(i);
-            if (ws->pivotCols[ws->pivotcolssort[i+1]] - ws->pivotCols[ws->pivotcolssort[i]] <= gap)
+            if (i < rankZ-1)
             {
-                ws->b[ws->bsort[i+1]] = ws->b[ws->bsort[i]];
-                offset++;
-            }
-            else
-            {
-                offset = 1;
-                ws->subsetsPerThread[seg].push_back(nrSubsets);
-                if (i > 0 && (int)((double)i / double(rnThread)) > seg) seg = min(nrThreads-1, seg+1);
-                nrSubsets++;
-                ws->subsetRg.col(nrSubsets)(0) = ws->pivotCols[ws->pivotcolssort[i]];
+                if (ws->pivotCols[ws->pivotcolssort[i+1]] - ws->pivotCols[ws->pivotcolssort[i]] <= gap)
+                {
+                    ws->b[ws->bsort[i+1]] = ws->b[ws->bsort[i]];
+                    offset++;
+                }
+                else
+                {
+                    offset = 1;
+                    ws->subsetsPerThread[seg].push_back(nrSubsets);
+                    if (i > 0 && (int)((double)i / double(rnThread)) > seg) seg = min(nrThreads-1, seg+1);
+                    nrSubsets++;
+                    ws->subsetRg.col(nrSubsets)(0) = ws->pivotCols[ws->pivotcolssort[i]];
+                }
             }
             ws->JPerThread[seg].push_back(i);
             i++;
